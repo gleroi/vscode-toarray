@@ -2,9 +2,10 @@
     "name": "toarray",
     "displayName": "toarray",
     "description": "Convert various things to array",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "gleroi",
     "readme": "README.md",
+    "icon": "https://raw.githubusercontent.com/gleroi/vscode-toarray/master/assets/icon.png",
     "engines": {
         "vscode": "^1.19.0"
     },
@@ -13,7 +14,6 @@
     ],
     "activationEvents": [
         "onCommand:extension.hexToArray"
-        
     ],
     "main": "./out/extension",
     "contributes": {

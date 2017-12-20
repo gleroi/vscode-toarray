@@ -2,10 +2,10 @@
     "name": "toarray",
     "displayName": "toarray",
     "description": "Convert various things to array",
-    "version": "0.0.3",
+    "version": "0.0.5",
     "publisher": "gleroi",
     "readme": "README.md",
-    "icon": "assets/icon.png",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.19.0"
     },

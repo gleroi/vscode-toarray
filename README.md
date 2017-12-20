@@ -14,7 +14,10 @@ None.
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.5
 
-TBD
+- Hexadecimal strings are converted to array
 
+### TBD
+
+- Decimal string to decimal or hexadecimal array

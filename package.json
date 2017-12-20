@@ -4,6 +4,7 @@
     "description": "Convert various things to array",
     "version": "0.0.1",
     "publisher": "gleroi",
+    "readme": "README.md",
     "engines": {
         "vscode": "^1.19.0"
     },

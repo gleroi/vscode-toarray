@@ -49,5 +49,12 @@ suite("toarray.HexSeparator", () => {
     test("Handle comma, semicolon and space as separator", () => {
         var input = "0001,02,03;05; 06 07 0008 ";
         assert.equal(toarray.HexSeparator(input), "0x00, 0x01, 0x02, 0x03, 0x05, 0x06, " + "0x07, 0x00, 0x08");
-    })
+    });
+});
+
+suite("toarray.Dec", () => {
+    test("1,2,42,0,51 to 0x01, 0x02, 0x...", () => {
+        var input = "1, 2,42 ,0, 51";
+        assert.equal(toarray.Dec(input), "0x1, 0x2, 0x2A, 0x0, 0x33");
+    });
 });

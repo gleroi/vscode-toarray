@@ -8,8 +8,16 @@ export function Hex(str : string) : string {
     return result.join(", ");
 }
 
+// Dec convert a comma separated string of decimal numbers to a hex array
 export function Dec(str: string) : string {
-    return "dec";
+    let decimals = str.split(",");
+    let result = [];
+    for (let i = 0; i < decimals.length; i++) {
+        let decStr = decimals[i]
+        let dec = Number.parseInt(decStr, 10)
+        result.push("0x" + dec.toString(16).toUpperCase());
+    }
+    return result.join(", ");
 }
 
 function removeSeparator(str : string) : string {

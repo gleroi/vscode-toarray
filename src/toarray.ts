@@ -8,6 +8,10 @@ export function Hex(str : string) : string {
     return result.join(", ");
 }
 
+export function Dec(str: string) : string {
+    return "dec";
+}
+
 function removeSeparator(str : string) : string {
     return str.replace(/,|;|\s/g, "");
 }
@@ -16,4 +20,8 @@ function removeSeparator(str : string) : string {
 // hex digit two by two.
 export function HexSeparator(str: string) : string {
     return Hex(removeSeparator(str));
+}
+
+export function DecSeparator(str: string) : string {
+    return Dec(str);
 }

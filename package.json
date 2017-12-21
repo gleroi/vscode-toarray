@@ -6,6 +6,10 @@
     "publisher": "gleroi",
     "readme": "README.md",
     "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#FFFFFF",
+        "theme": "dark"
+    },
     "engines": {
         "vscode": "^1.19.0"
     },
@@ -13,7 +17,8 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.hexToArray"
+        "onCommand:extension.hexToArray",
+        "onCommand:extension.decToArray"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -21,6 +26,10 @@
             {
                 "command": "extension.hexToArray",
                 "title": "toarray: hex to array"
+            },
+            {
+                "command": "extension.decToArray",
+                "title": "toarray: decimal to array"
             }
         ]
     },
